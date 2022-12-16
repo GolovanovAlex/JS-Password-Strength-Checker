@@ -6,5 +6,7 @@ show.onclick = function () {
     show.classList.add('hide');
   } else {
     pswrd.setAttribute('type', 'password');
+    show.classList.remove('hide');
   }
 };
+function strength(password) {}
