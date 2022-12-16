@@ -63,18 +63,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   position: absolute;
   top: 0;
   right: 0;
-  width: 60px;
+  width: 65px;
   height: 100%;
+  padding: 1px;
   background-color: #333;
   border: 6px solid #222;
   cursor: pointer;
 }
 .show::before {
   content: 'Show';
-  font-size: 0.6em;
+  font-size: 0.7em;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: #fff;
