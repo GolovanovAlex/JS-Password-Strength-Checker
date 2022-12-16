@@ -10,4 +10,26 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background-color: #222;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  width: 400px;
+  padding: 30px 30px 70px;
+  background-color: #333;
+  border: 1px solid #111;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, transparent, #0005);
+}
+.container h2 {
+  color: #666;
+  font-weight: 500;
+}
+.container .input-box {
+  position: relative;
+  width: 100%;
 }
