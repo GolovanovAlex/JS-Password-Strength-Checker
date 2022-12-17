@@ -70,6 +70,28 @@ body {
   width: 100%;
   background-color: #0f0;
 }
+.container .strengtmeter::after {
+  content: '';
+  position: absolute;
+  top: -45px;
+  left: 30px;
+  transition: 0.5s;
+}
+.container.weak .strengtmeter::after {
+  content: 'Your Password is Weak';
+  color: #f00;
+  filter: drop-shadow(0 0 5px #f00);
+}
+.container.medium .strengtmeter::after {
+  content: 'Your Password is Medium';
+  color: #ffa500;
+  filter: drop-shadow(0 0 5px #ffa500);
+}
+.container.strong .strengtmeter::after {
+  content: 'Your Password is Strong';
+  color: #0f0;
+  filter: drop-shadow(0 0 5px #0f0);
+}
 .show {
   display: flex;
   justify-content: center;
