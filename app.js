@@ -27,6 +27,14 @@ document.addEventListener('keyup', function (e) {
     container.classList.add('weak');
     container.classList.remove('medium');
     container.classList.remove('strong');
+  } else if (strength > 2 && strength <= 4) {
+    container.classList.remove('weak');
+    container.classList.add('medium');
+    container.classList.remove('strong');
+  } else if (strength > 4) {
+    container.classList.remove('weak');
+    container.classList.remove('medium');
+    container.classList.add('strong');
   }
 });
 
