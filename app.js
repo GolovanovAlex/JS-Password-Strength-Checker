@@ -1,4 +1,4 @@
-function strength(password) {
+function pStrength(password) {
   let i = 0;
   if (password.length > 6) {
     i++;
@@ -19,6 +19,16 @@ function strength(password) {
 }
 
 let container = document.querySelector('.container');
+document.addEventListener('keyup', function (e) {
+  let password = document.querySelector('#myPassword').value;
+
+  let strength = pStrength(password);
+  if (strength <= 2) {
+    container.classList.add('weak');
+    container.classList.remove('medium');
+    container.classList.remove('strong');
+  }
+});
 
 let pswrd = document.querySelector('#myPassword');
 let show = document.querySelector('.show');
